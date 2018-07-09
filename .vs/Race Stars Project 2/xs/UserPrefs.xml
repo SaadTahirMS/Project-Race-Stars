@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{59B38562-20B5-F1EB-1EEE-DE9ABD876EA7}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/RealisticCarControllerV3/Scripts/RCC_AICarController.cs">
+    <Files>
+      <File FileName="Assets/RealisticCarControllerV3/Scripts/RCC_AICarController.cs" Line="19" Column="5" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Race_220Stars_220Project_2202 PreferredExecutionTarget="Unity.Editor" />
+</Properties>

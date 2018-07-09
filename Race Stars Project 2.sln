@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio for Mac
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Race Stars Project 2", "Race Stars Project 2.csproj", "{59B38562-20B5-F1EB-1EEE-DE9ABD876EA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Race Stars Project 2.Editor", "Race Stars Project 2.Editor.csproj", "{8A004EF8-107B-CB93-0B7A-125E1828471A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{59B38562-20B5-F1EB-1EEE-DE9ABD876EA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59B38562-20B5-F1EB-1EEE-DE9ABD876EA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59B38562-20B5-F1EB-1EEE-DE9ABD876EA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59B38562-20B5-F1EB-1EEE-DE9ABD876EA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A004EF8-107B-CB93-0B7A-125E1828471A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A004EF8-107B-CB93-0B7A-125E1828471A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A004EF8-107B-CB93-0B7A-125E1828471A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A004EF8-107B-CB93-0B7A-125E1828471A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
