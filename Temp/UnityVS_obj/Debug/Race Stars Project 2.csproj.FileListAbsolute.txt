@@ -1,0 +1,2 @@
+/Users/saadtahir/Race Stars Project 2/Temp/UnityVS_obj/Debug/Race Stars Project 2.csprojAssemblyReference.cache
+/Users/saadtahir/Race Stars Project 2/Temp/UnityVS_obj/Debug/Race Stars Project 2.csproj.CoreCompileInputs.cache

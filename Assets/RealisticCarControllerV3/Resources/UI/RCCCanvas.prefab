@@ -5930,11 +5930,7 @@ MonoBehaviour:
   - {fileID: 11418864}
   - {fileID: 11425026}
   - {fileID: 11470794}
-  hudColor:
-    r: 0
-    g: 0.751724
-    b: 1
-    a: 1
+  hudColor: {r: 0, g: 0.751724, b: 1, a: 1}
   hudColor_R: {fileID: 11496620}
   hudColor_G: {fileID: 11428246}
   hudColor_B: {fileID: 11438554}

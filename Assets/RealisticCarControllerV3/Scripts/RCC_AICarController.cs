@@ -13,8 +13,7 @@ using System.Collections.Generic;
 
 [AddComponentMenu("BoneCracker Games/Realistic Car Controller/AI/AI Controller")]
 public class RCC_AICarController : MonoBehaviour {
-
-	private RCC_Settings RCCSettings{get{return RCC_Settings.Instance;}}
+    private RCC_Settings RCCSettings { get { return RCC_Settings.Instance; } }
 
 	private RCC_CarControllerV3 carController;
 	private Rigidbody rigid;
@@ -55,8 +54,6 @@ public class RCC_AICarController : MonoBehaviour {
 	// Unity's Navigator.
 	private UnityEngine.AI.NavMeshAgent navigator;
 	private GameObject navigatorObject;
-
-	
 
 	void Awake() {
 
@@ -296,32 +293,17 @@ public class RCC_AICarController : MonoBehaviour {
 		
 	}
 
-	public void ApplyGas(){
-		carController.gasInput = gasInput;
-	}
-	public void ApplyBrake(){
-		carController.gasInput = brakeInput;
-	}
-
 	void ApplyTorques(){
-
+        brakeInput = Mathf.Clamp01(-Input.GetAxis(RCCSettings.verticalInput));
 		if(carController.direction == 1){
-			
-			gasInput = Input.GetAxis(RCCSettings.horizontalInput);
-			carController.gasInput = gasInput;
+			if(!limitSpeed){
+                gasInput = Input.GetAxis(RCCSettings.verticalInput);
 
-			brakeInput = Mathf.Clamp01(-Input.GetAxis(RCCSettings.horizontalInput));
-            //carController.brakeInput = brakeInput;
-            carController.handbrakeInput = brakeInput;
-			//if(!limitSpeed){
-				//gasInput = Input.GetAxis(RCCSettings.verticalInput);
-				//carController.gasInput = gasInput;
-				
-			//}else{
-			//	carController.gasInput = gasInput * Mathf.Clamp01(Mathf.Lerp(10f, 0f, (carController.speed) / maximumSpeed));
-			//}
-		}
-		else{
+				carController.gasInput = gasInput;
+			}else{
+				carController.gasInput = gasInput * Mathf.Clamp01(Mathf.Lerp(10f, 0f, (carController.speed) / maximumSpeed));
+			}
+		}else{
 			carController.gasInput = 0f;
 		}
 
@@ -330,11 +312,13 @@ public class RCC_AICarController : MonoBehaviour {
 		else
 			carController.steerInput = steerInput;
 
-		/*if(carController.direction == 1){
-			brakeInput = Mathf.Clamp01(-Input.GetAxis(RCCSettings.verticalInput));
-			carController.brakeInput = brakeInput;
-		}else
-			carController.brakeInput = gasInput;*/
+        if(carController.direction == 1){
+            brakeInput = Mathf.Clamp01(-Input.GetAxis(RCCSettings.verticalInput));
+            carController.brakeInput = brakeInput;
+
+        }
+		else
+			carController.brakeInput = gasInput;
 
 	}
 	

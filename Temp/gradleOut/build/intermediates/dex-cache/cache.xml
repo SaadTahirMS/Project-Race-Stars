@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/saadtahir/Race Stars Project 2/Temp/gradleOut/libs/unity-classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="28.0.1"
+        sha1="2d302418aa3482b8db770278260340aed47dd37a">
+        <dex dex="/Users/saadtahir/Race Stars Project 2/Temp/gradleOut/build/intermediates/pre-dexed/release/unity-classes_56f8b58f930a210d07e41805415c1ea797161bf4.jar" />
+    </item>
+
+</items>
